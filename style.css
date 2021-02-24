@@ -26,8 +26,9 @@ main {
 
 
 
+
 .container {
-  width: 50%;
+  width: 40%;
   border: 1px solid gray;
   display: inline-block;
   vertical-align: top;
@@ -54,12 +55,86 @@ input {
   color: white;
   padding: 5px;
 }
-.right-side {
-    border: 1px solid gray;
-    width: 20%;
-}
+
 footer {
     width: 100%;
     border: 1px solid gray;
     height: 5em;
 }
+/* Nazira's Part */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+}
+h3 {
+  font-weight: normal;
+}
+.right-aside {
+  width: 10%;
+  margin-left: 20px;
+  margin-top: 20px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.section1,
+.section2,
+.section3,
+.section4 {
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: solid;
+  padding: 0.15px 16px;
+  margin-top: 15%;
+  box-shadow: 3px 3px 15px 2px rgb(180, 193, 206);
+}
+button {
+  background-color: #dfe5e8;
+  color: #000;
+  padding: 8px 16px;
+  border: none;
+  width: 100%;
+}
+button:hover {
+  background-color: rgb(206, 206, 206);
+}
+.accept {
+  background-color: #4caf50;
+  color: #fff;
+  margin-top: 16px;
+}
+.remove {
+  background-color: #f44336;
+  color: #fff;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.accept,
+.remove {
+  opacity: 0.6;
+}
+.accept:hover {
+  background-color: rgb(206, 206, 206);
+  color: grey;
+}
+.remove:hover {
+  background-color: rgb(206, 206, 206);
+  color: grey;
+}
+.btn {
+  width: 100%;
+}
+.section3 {
+  padding: 16px 0px;
+}
+
+.section4 {
+  padding: 16px 0px;
+  color: #000;
+  background-color: #fff;
+  margin-bottom: 30px;
+}
+
+/* Nazira's Part ends here */
