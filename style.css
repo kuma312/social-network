@@ -4,80 +4,85 @@
 
 header {
   border: 1px solid gray;
-  height: 5em;
-  position: fixed;
+  height: 4em;
+  position:fixed;
   width: 100%;
   overflow: hidden;
   top: 0;
-  background-color: gray;
+  background-color: rgb(54,157,229);
 }
 
 main {
+  
+  display: flex;
+  justify-content: center;
+  height: 50em;
+  margin-top: 80px;
+  overflow: auto;
+  
+}
 
-    display: flex;
-    justify-content: center;
-    height: 50em;
-    margin-top: 100px;
-    
-  }
 .my-profile {
-box-shadow: 7px 6px 26px -6px rgba(0, 0, 0, 0.75);
-box-sizing: border-box;
+  box-shadow: 3px 3px 15px 2px rgb(180, 193, 206);
+  box-sizing: border-box;
 
 }
+
 .my-profile p {
   padding-top: 10px;
   text-align: center;
 }
-hr { 
-width: 85%;
-color: rgb(238,238,238);
+
+hr {
+  width: 85%;
+  color: rgb(238, 238, 238);
 }
+
 .my-pic img {
   border-radius: 50%;
   width: 60%;
-  display:block;
+  display: block;
   margin: auto;
-  
+
 
 }
-.personal-data i{
+
+.personal-data i {
   color: grey;
 }
 
 .personal-data {
-padding: 12px;
-list-style-type: none;
-line-height: 3px;
+  padding: 12px;
+  list-style-type: none;
+  line-height: 3px;
 
 }
 
-.my-groups button, .my-events button, .my-photos button {
-background-color:#199de5 ;
-color: #fff;
-margin-right: 50px;
+.my-groups button,
+.my-events button,
+.my-photos button {
+  background-color: #199de5;
+  color: #fff;
+  margin-right: 50px;
+  width: 100%;
 }
-.left-side i {
-  m
-}
-.left-side{
-    border: 1px solid gray;
-    width: 30%;
-    
 
-}
+
 
 .left-side {
-  border: 1px solid gray;
   width: 30%;
+  margin: 8px;
+
 }
+
+
 
 /* Kumar's part starts here */
 
 .container {
   width: 50%;
-  margin: 10px;
-  
+  margin: 8px;
+
 }
 
 .middle-col {
@@ -91,9 +96,11 @@ margin-right: 50px;
   clear: both;
   box-shadow: 3px 3px 15px 2px rgb(180, 193, 206);
 }
+
 .user-content img {
   width: 100%;
 }
+
 .middle-col input {
   width: 100%;
   padding: 10px;
@@ -119,7 +126,7 @@ hr {
 }
 
 .middle-col button {
-  display:inline-block;
+  display: inline-block;
   background-color: rgb(54, 157, 229);
   color: white;
   padding: 7px 18px;
@@ -169,7 +176,7 @@ h3 {
   box-shadow: 3px 3px 15px 2px rgb(180, 193, 206);
 }
 
-  button {
+button {
   display: inline-block;
   background-color: #dfe5e8;
   color: #000;
@@ -210,9 +217,9 @@ button:hover {
   color: grey;
 }
 
-.btn button{
+.btn button {
   width: 100%;
-  
+
 }
 
 .section3 {
@@ -232,6 +239,6 @@ footer {
   width: 100%;
   border: 1px solid gray;
   height: 5em;
-  
-  
+
+
 }
