@@ -18,6 +18,46 @@ main {
     margin-top: 100px;
     
   }
+.my-profile {
+box-shadow: 7px 6px 26px -6px rgba(0, 0, 0, 0.75);
+box-sizing: border-box;
+
+}
+.my-profile p {
+  padding-top: 10px;
+  text-align: center;
+}
+hr { 
+width: 85%;
+color: rgb(238,238,238);
+}
+.my-pic img {
+  border-radius: 50%;
+  width: 60%;
+  display:block;
+  margin: auto;
+  
+
+}
+.personal-data i{
+  color: grey;
+}
+
+.personal-data {
+padding: 12px;
+list-style-type: none;
+line-height: 3px;
+
+}
+
+.my-groups button, .my-events button, .my-photos button {
+background-color:#199de5 ;
+color: #fff;
+margin-right: 50px;
+}
+.left-side i {
+  m
+}
 .left-side{
     border: 1px solid gray;
     width: 30%;
@@ -51,8 +91,8 @@ input {
   margin: 5px 10px;
 }
 
-.fa {
-  color: white;
+.fas {
+  color: #fff;
   padding: 5px;
 }
 
