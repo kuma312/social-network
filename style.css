@@ -3,78 +3,107 @@
 }
 
 header {
-    border: 1px solid gray;
-    height: 5em;
-    position: fixed;
-    width: 100%;
-    overflow: hidden;
-    top: 0;
-    background-color: gray;
+  border: 1px solid gray;
+  height: 5em;
+  position: fixed;
+  width: 100%;
+  overflow: hidden;
+  top: 0;
+  background-color: gray;
 }
+
 main {
-    display: flex;
-    justify-content: center;
-    height: 50em;
-    margin-top: 100px;
-    
-  }
-.left-side{
-    border: 1px solid gray;
-    width: 30%;
-    
+  display: flex;
+  justify-content: center;
+  height: 50em;
+  margin-top: 100px;
+  overflow: auto;
 }
 
+.left-side {
+  border: 1px solid gray;
+  width: 30%;
+}
 
-
+/* Kumar's part starts here */
 
 .container {
-  width: 40%;
-  border: 1px solid gray;
-  display: inline-block;
-  vertical-align: top;
+  width: 50%;
+  margin: 10px;
   
 }
 
-.type-status,
-input {
+.middle-col {
   width: 100%;
-  margin: auto;
+  margin-bottom: 15px;
   padding: 10px;
-  margin-top: 8px;
+
+  border: 0px solid gray;
+  max-height: 30em;
+  box-sizing: border-box;
+  clear: both;
+  box-shadow: 3px 3px 15px 2px rgb(180, 193, 206);
+}
+.user-content img {
+  width: 100%;
+}
+.middle-col input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
 }
 
-.btn {
-  width: 80px;
+.avatar img {
+  width: 60px;
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.time {
+  float: right;
+  opacity: 0.5;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #eee;
+  margin: 20px 0;
+}
+
+.middle-col button {
+  display:inline-block;
   background-color: rgb(54, 157, 229);
   color: white;
-  padding: 5px 10px;
-  margin: 5px 10px;
+  padding: 7px 18px;
+  margin-top: 20px;
+  border: none;
+  vertical-align: middle;
 }
 
-.fa {
+.fas {
   color: white;
   padding: 5px;
 }
 
-footer {
-    width: 100%;
-    border: 1px solid gray;
-    height: 5em;
-}
+/* Kumar's part ends here */
+
 /* Nazira's Part */
 body {
   margin: 0;
   padding: 0;
   font-family: "Open Sans", sans-serif;
   font-size: 15px;
+  
 }
+
 h3 {
-  font-weight: normal;
+  font-weight: 400;
 }
+
 .right-aside {
-  width: 15%;
-  margin-left: 20px;
-  margin-top: 20px;
+  width: 20%;
+  margin: 10px;
   text-align: center;
   line-height: 1.5;
 }
@@ -87,45 +116,56 @@ h3 {
   border-width: 0;
   border-style: solid;
   padding: 0.15px 16px;
-  margin-top: 15%;
+  margin-bottom: 20px;
   box-shadow: 3px 3px 15px 2px rgb(180, 193, 206);
 }
-button {
+
+  button {
+  display: inline-block;
   background-color: #dfe5e8;
   color: #000;
   padding: 8px 16px;
   border: none;
-  width: 100%;
+  /* width: 100%; */
 }
+
 button:hover {
   background-color: rgb(206, 206, 206);
 }
+
 .accept {
   background-color: #4caf50;
   color: #fff;
   margin-top: 16px;
 }
+
 .remove {
   background-color: #f44336;
   color: #fff;
   margin-top: 16px;
   margin-bottom: 16px;
 }
+
 .accept,
 .remove {
   opacity: 0.6;
 }
+
 .accept:hover {
   background-color: rgb(206, 206, 206);
   color: grey;
 }
+
 .remove:hover {
   background-color: rgb(206, 206, 206);
   color: grey;
 }
-.btn {
+
+.btn button{
   width: 100%;
+  
 }
+
 .section3 {
   padding: 16px 0px;
 }
@@ -138,3 +178,11 @@ button:hover {
 }
 
 /* Nazira's Part ends here */
+
+footer {
+  width: 100%;
+  border: 1px solid gray;
+  height: 5em;
+  
+  
+}
