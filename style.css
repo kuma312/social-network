@@ -63,3 +63,59 @@ footer {
     border: 1px solid gray;
     height: 5em;
 }
+/* Chopas styles start here */
+.interests, .hey{
+  box-shadow: 7px 6px 26px -6px rgba(0, 0, 0, 0.75);
+  box-sizing: border-box;
+  padding: 15px;
+
+}
+ul li{
+  list-style: none;
+  text-align: center;
+  color: white;
+  display: inline-block;
+  padding: 4px 8px;
+  margin: 2px;
+  font-size: 12px;
+}
+ul{
+  padding: 0;
+}
+.hey{
+  background-color: rgb(221, 214, 214);
+  padding: 10px;
+  margin-top: 20px;
+  position: relative;
+}
+
+.left-bottom{
+  font-family: Arial, Helvetica, sans-serif;
+}
+li:nth-child(-n+2){
+  background-color: rgb(39, 67, 126);
+}
+li:last-child{
+  background-color: rgb(237, 240, 241);
+}
+li:nth-child(n+8){
+  color: black;
+}
+li:nth-child(n+3):nth-child(-n+7){
+  background-color: rgb(17, 173, 224);
+}
+li:nth-child(n+8):nth-child(-n+9){
+  background-color: rgb(146, 150, 150);
+}
+li:nth-child(10){
+  background-color: rgb(197, 194, 194);
+}
+.close-button{
+  position:absolute;
+  top: 0;
+  right: 0;
+  border: none;
+  background-color: rgb(197, 192, 192);
+  padding: 10px 15px;
+}
+/* Chopas styles end here */
