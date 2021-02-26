@@ -1,76 +1,116 @@
 * {
   box-sizing: border-box;
 }
-
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+/*
 header {
-    border: 1px solid gray;
-    height: 5em;
-    position: fixed;
-    width: 100%;
-    overflow: hidden;
-    top: 0;
-    background-color: gray;
-}
-main {
-    display: flex;
-    justify-content: center;
-    height: 50em;
-    margin-top: 100px;
-    
-  }
-.left-side{
-    border: 1px solid gray;
-    width: 30%;
-    
-}
-
-
-
-.container {
-  width: 50%;
   border: 1px solid gray;
-  display: inline-block;
-  vertical-align: top;
+  height: 4em;
+  position:fixed;
+  width: 100%;
+  overflow: hidden;
+  top: 0;
+  background-color: rgb(54,157,229);
+}
+*/
+main {
+  display: flex;
+  align-items: flex-start;
+}
+.left-side{
+  flex: 2;
+  margin: 10px;
+}
+.container{
+  flex: 4;
+  margin: 10px;
+}
+.right-aside{
+  flex: 1;
+  margin: 10px;
+}
+/* Kanat style starts here */
+.my-profile , .left-middle{
+  box-shadow: 3px 3px 15px 2px rgb(180, 193, 206);
+}
+
+.my-profile p {
+  padding-top: 10px;
+  text-align: center;
+  margin: 0;
+}
+hr {
+  width: 95%;
+  margin: auto;
+  border: 0;
+  border-top: 1px solid #eee;
+ 
+}
+
+.my-pic img {
+  border-radius: 50%;
+  width: 40%;
+  display: block;
+  margin: auto;
+  padding: 15px 0px 20px 0px;
+}
+
+.personal-data i {
+  color: grey;
+  padding-right: 20px;
+}
+
+.personal-data {
+  padding: 20px;
+  padding-top: 0;
+  list-style-type: none;
+  line-height: 10px;
+
+}
+
+.my-groups button,
+.my-events button,
+.my-photos button {
+  background-color: #199de5;
+  color: #fff;
+  margin-right: 50px;
+  width: 100%;
+  text-align: left;
+}
+.my-groups i,
+.my-events i,
+.my-photos i {
+  padding-right: 20px;
+}
+
+.my-groups p,
+.my-events p{
+  padding-left: 20px;
+}
+.nature-img{
+  display: inline-flex;
+  flex-wrap: wrap;
   
 }
+.my-photos img{
+  width:  50%;
+  height: 120px;
+  padding: 10px 20px;
 
-.type-status,
-input {
-  width: 100%;
-  margin: auto;
-  padding: 10px;
-  margin-top: 8px;
 }
-
-.btn {
-  width: 80px;
-  background-color: rgb(54, 157, 229);
-  color: white;
-  padding: 5px 10px;
-  margin: 5px 10px;
-}
-
-.fa {
-  color: white;
-  padding: 5px;
-}
-.right-side {
-    border: 1px solid gray;
-    width: 20%;
-}
-footer {
-    width: 100%;
-    border: 1px solid gray;
-    height: 5em;
-}
+/* Kanat style ends here */
 /* Chopas styles start here */
 .interests, .hey{
   box-shadow: 7px 6px 26px -6px rgba(0, 0, 0, 0.75);
   box-sizing: border-box;
   padding: 15px;
-
+  margin-top: 20px;
 }
-ul li{
+.interests ul li{
   list-style: none;
   text-align: center;
   color: white;
@@ -88,26 +128,25 @@ ul{
   margin-top: 20px;
   position: relative;
 }
-
-.left-bottom{
-  font-family: Arial, Helvetica, sans-serif;
+.hey i{
+  color: #000;
 }
-li:nth-child(-n+2){
+.interests li:nth-child(-n+2){
   background-color: rgb(39, 67, 126);
 }
-li:last-child{
+.interests li:last-child{
   background-color: rgb(237, 240, 241);
 }
-li:nth-child(n+8){
+.interests li:nth-child(n+8){
   color: black;
 }
-li:nth-child(n+3):nth-child(-n+7){
+.interests li:nth-child(n+3):nth-child(-n+7){
   background-color: rgb(17, 173, 224);
 }
-li:nth-child(n+8):nth-child(-n+9){
+.interests li:nth-child(n+8):nth-child(-n+9){
   background-color: rgb(146, 150, 150);
 }
-li:nth-child(10){
+.interests li:nth-child(10){
   background-color: rgb(197, 194, 194);
 }
 .close-button{
@@ -119,3 +158,148 @@ li:nth-child(10){
   padding: 10px 15px;
 }
 /* Chopas styles end here */
+
+
+/* Kumar's part starts here */
+.middle-col {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+
+  border: 0px solid gray;
+  max-height: 30em;
+  box-sizing: border-box;
+  clear: both;
+  box-shadow: 3px 3px 15px 2px rgb(180, 193, 206);
+}
+
+.user-content img {
+  width: 100%;
+}
+
+.middle-col input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.avatar img {
+  width: 60px;
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.time {
+  float: right;
+  opacity: 0.5;
+}
+.middle-col button {
+  display: inline-block;
+  background-color: rgb(54, 157, 229);
+  color: white;
+  padding: 7px 18px;
+  margin-top: 20px;
+  border: none;
+  vertical-align: middle;
+}
+
+.fas {
+
+  color: #fff;
+
+  padding: 5px;
+}
+
+/* Kumar's part ends here */
+
+/* Nazira's Part */
+
+
+h3 {
+  font-weight: 400;
+}
+
+.right-aside {
+  text-align: center;
+  line-height: 1.5;
+}
+
+.section1,
+.section2,
+.section3,
+.section4 {
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: solid;
+  padding: 0.15px 16px;
+  margin-bottom: 20px;
+  box-shadow: 3px 3px 15px 2px rgb(180, 193, 206);
+}
+
+button {
+  display: inline-block;
+  background-color: #dfe5e8;
+  color: #000;
+  padding: 8px 16px;
+  border: none;
+  /* width: 100%; */
+}
+
+button:hover {
+  background-color: rgb(206, 206, 206);
+}
+
+.accept {
+  background-color: #4caf50;
+  color: #fff;
+  margin-top: 16px;
+}
+
+.remove {
+  background-color: #f44336;
+  color: #fff;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.accept,
+.remove {
+  opacity: 0.6;
+}
+
+.accept:hover {
+  background-color: rgb(206, 206, 206);
+  color: grey;
+}
+
+.remove:hover {
+  background-color: rgb(206, 206, 206);
+  color: grey;
+}
+
+.btn {
+  width: 45%;
+
+}
+
+.section3 {
+  padding: 16px 0px;
+}
+
+.section4 {
+  padding: 16px 0px;
+  color: #000;
+  background-color: #fff;
+  margin-bottom: 30px;
+}
+
+/* Nazira's Part ends here */
+
+footer {
+  width: 100%;
+  border: 1px solid gray;
+  height: 5em;
+
+
+}
