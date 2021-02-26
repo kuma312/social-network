@@ -6,7 +6,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
 }
-
 /* header */
 .first-part {
   display: flex;
@@ -24,17 +23,13 @@ body {
   padding-right: 20px;
 }
 .seytech a {
-  background-color: #076490!important;
+  background-color: #076490;
   font-size: 18px;
   padding: 30px;
   border: none;
   color: #fff;
   text-decoration: none;
-  
 }
-
-
-
 .globe a {
   color: #fff;
   padding: 30px 24px;
@@ -43,16 +38,11 @@ body {
   background-color: #199DE5;
   margin-left: -5px;
 }
-
-
-
 /* Navigation ends here */
 main {
   display: flex;
   align-items: flex-start;
   margin-top: 70px;
-  
-  
 }
 .left-side{
   flex: 2;
@@ -101,7 +91,7 @@ hr {
 .my-groups button,
 .my-events button,
 .my-photos button {
-  background-color: #199de5;
+  background-color: #199DE5;
   color: #fff;
   margin-right: 50px;
   width: 100%;
@@ -122,7 +112,6 @@ hr {
 }
 .my-photos img{
   width:  50%;
-  
   padding: 10px 20px;
 }
 /* Kanat style ends here */
@@ -181,17 +170,19 @@ ul{
   padding: 10px 15px;
 }
 /* Chopas styles end here */
-
-/* Kumar's part starts here */
-
+/* Kumar’s part starts here */
 .container {
   width: 50%;
-  margin: 8px;
 }
-.my-photos img{
-  width:  50%;
-  height: 120px;
-  padding: 10px 20px;
+.middle-col {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 0px solid gray;
+  min-height: 10em;
+  box-sizing: border-box;
+  clear: both;
+  box-shadow: 3px 3px 15px 2px rgb(180, 193, 206);
 }
 .middle-col {
     width: 100%;
@@ -214,34 +205,23 @@ ul{
   width: 100%;
   box-sizing: border-box;
 }
-
 .middle-col input {
   width: 100%;
   padding: 10px;
   margin-top: 10px;
 }
-
 .avatar img {
   width: 60px;
   float: left;
   margin-right: 10px;
   border-radius: 50%;
 }
-
 .time {
   float: right;
   opacity: 0.5;
   margin-top: 10px;
 }
-
-.clearfix {
-  clear: right;
-}
-
-
-
 .middle-col button {
-  
   background-color: rgb(54, 157, 229);
   color: white;
   padding: 7px 18px;
@@ -249,34 +229,21 @@ ul{
   border: none;
   vertical-align: middle;
 }
-a:hover {
-  
-}
- a .fas:hover {
-  color: black;
-  background-color: blanchedalmond;
-}
 .fas {
   color: #fff;
-
   padding: 5px;
 }
-
-/* Kumar's part ends here */
-
-/* Nazira's Part */
-
+/* Kumar’s part ends here */
+/* Nazira’s Part */
 h3 {
   font-weight: 400;
 }
-
 .right-aside {
   width: 20%;
   margin: 10px;
   text-align: center;
   line-height: 1.5;
 }
-
 .section1,
 .section2,
 .section3,
@@ -288,70 +255,75 @@ h3 {
   margin-bottom: 20px;
   box-shadow: 3px 3px 15px 2px rgb(180, 193, 206);
 }
-
 button {
   display: inline-block;
-  background-color: #dfe5e8;
+  background-color: #DFE5E8;
   color: #000;
   padding: 8px 16px;
   border: none;
   /* width: 100%; */
 }
-
 button:hover {
   background-color: rgb(206, 206, 206);
+  color: #000;
 }
-
+.seytech  :hover, a {
+  color: #000;
+  background-color:rgb(206, 206, 206) ;
+}
+.seytech :hover > * {
+  color: black;
+}
+button:hover > *  {
+  color: black;
+}
+.globe a:hover {
+  color: #000;
+  background-color:white ;
+}
+.globe a:hover > * {
+  color: black;
+}
 .accept {
-  background-color: #4caf50;
+  background-color: #4CAF50;
   color: #fff;
   margin-top: 16px;
 }
-
 .remove {
-  background-color: #f44336;
+  background-color: #F44336;
   color: #fff;
   margin-top: 16px;
   margin-bottom: 16px;
 }
-
 .accept,
 .remove {
   opacity: 0.6;
 }
-
 .accept:hover {
   background-color: rgb(206, 206, 206);
   color: grey;
 }
-
 .remove:hover {
   background-color: rgb(206, 206, 206);
   color: grey;
 }
-
 .btn button {
   width: 50%;
   float: left;
-
 }
 .clearfix {
   clear: both;
 }
-
 .section3 {
   padding: 16px 0px;
 }
-
 .section4 {
   padding: 16px 0px;
   color: #000;
   background-color: #fff;
   margin-bottom: 30px;
 }
-
-/* Nazira's Part ends here */
-
+/* Nazira’s Part ends here */
 .footer {
   position: relative;
   left:0;
@@ -366,7 +338,48 @@ footer .footer-a{
 }
 footer .footer-b,
 footer .footer-b a {
-  background-color: #199de5;
+  background-color: #199DE5;
   padding: 13px;
   color: white;
+}
+/* Responsiveness has started */
+
+@media screen and (max-width: 767px) {
+  .globe,
+  .interests,
+  .hey {
+    display: none;
+  }
+  .nature-img {
+    display: flex;
+    flex-direction: column;
+  }
+  .my-photos img {
+    width: 100%;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .container {
+    width: 90%;
+    margin: auto;
+  }
+  .right-aside {
+    width: 100%;
+  }
+  img {
+    width: 50%;
+    margin: auto;
+  }
+  .btn {
+    float: none;
+    display: flex;
+    flex-direction: column;
+  }
+ .btn button, .info {
+    width: 100%;
+  }
 }
