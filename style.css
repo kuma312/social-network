@@ -326,6 +326,11 @@ button:hover {
 
 .btn button {
   width: 50%;
+  float: left;
+
+}
+.clearfix {
+  clear: both;
 }
 
 .section3 {
