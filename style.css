@@ -6,20 +6,54 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
 }
-/*
-header {
-  border: 1px solid gray;
-  height: 4em;
-  position:fixed;
+
+/* header */
+.navi {
+  background-color: #199DE5;
   width: 100%;
   overflow: hidden;
+  position: fixed;
   top: 0;
-  background-color: rgb(54,157,229);
 }
-*/
+.seytech, .seytech .fa-home{
+  background-color: #076490!important;
+  font-size: 18px;
+  padding: 15px 16px !important;
+  border: none;
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover  {
+  color: black;
+  background-color: rgb(230, 230, 224)!important;
+}
+.globe,
+.user,
+.envelope {
+  color: #fff;
+  padding: 30px 24px;
+  width: auto;
+  border: none;
+  background-color: #199DE5;
+  margin-left: -5px;
+}
+.globe:hover {
+  color: black;
+  background-color: rgb(255, 255, 255);
+}
+.user:hover{
+    color: black;
+    background-color: rgb(255, 255, 255);
+}
+.envelope:hover{
+    color: black;
+    background-color: rgb(255, 255, 255);     }
+/* Navigation ends here */
 main {
   display: flex;
   align-items: flex-start;
+  margin-top: 70px;
 }
 .left-side{
   flex: 2;
@@ -37,7 +71,6 @@ main {
 .my-profile , .left-middle{
   box-shadow: 3px 3px 15px 2px rgb(180, 193, 206);
 }
-
 .my-profile p {
   padding-top: 10px;
   text-align: center;
@@ -48,30 +81,24 @@ hr {
   margin: auto;
   border: 0;
   border-top: 1px solid #eee;
- 
 }
-
 .my-pic img {
   border-radius: 50%;
-  width: 40%;
+  width: 120px;
   display: block;
   margin: auto;
   padding: 15px 0px 20px 0px;
 }
-
 .personal-data i {
   color: grey;
   padding-right: 20px;
 }
-
 .personal-data {
   padding: 20px;
   padding-top: 0;
   list-style-type: none;
   line-height: 10px;
-
 }
-
 .my-groups button,
 .my-events button,
 .my-photos button {
@@ -86,7 +113,6 @@ hr {
 .my-photos i {
   padding-right: 20px;
 }
-
 .my-groups p,
 .my-events p{
   padding-left: 20px;
@@ -94,13 +120,11 @@ hr {
 .nature-img{
   display: inline-flex;
   flex-wrap: wrap;
-  
 }
 .my-photos img{
   width:  50%;
   height: 120px;
   padding: 10px 20px;
-
 }
 /* Kanat style ends here */
 /* Chopas styles start here */
@@ -159,22 +183,37 @@ ul{
 }
 /* Chopas styles end here */
 
-
 /* Kumar's part starts here */
-.middle-col {
-  width: 100%;
-  margin-bottom: 15px;
-  padding: 10px;
 
-  border: 0px solid gray;
-  max-height: 30em;
-  box-sizing: border-box;
-  clear: both;
-  box-shadow: 3px 3px 15px 2px rgb(180, 193, 206);
+.container {
+  width: 50%;
+  margin: 8px;
 }
-
+.my-photos img{
+  width:  50%;
+  height: 120px;
+  padding: 10px 20px;
+}
+.middle-col {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 0px solid gray;
+    min-height: 10em;
+    box-sizing: border-box;
+    clear: both;
+    box-shadow: 3px 3px 15px 2px rgb(180, 193, 206);
+  }
+.user-content {
+  display: flex;
+}
+.col-img {
+  padding: 0 10px 0 0;
+  width: 100%;
+}
 .user-content img {
   width: 100%;
+  box-sizing: border-box;
 }
 
 .middle-col input {
@@ -186,16 +225,24 @@ ul{
 .avatar img {
   width: 60px;
   float: left;
-  margin-right: 20px;
+  margin-right: 10px;
   border-radius: 50%;
 }
 
 .time {
   float: right;
   opacity: 0.5;
+  margin-top: 10px;
 }
+
+.clearfix {
+  clear: right;
+}
+
+
+
 .middle-col button {
-  display: inline-block;
+  
   background-color: rgb(54, 157, 229);
   color: white;
   padding: 7px 18px;
@@ -204,8 +251,8 @@ ul{
   vertical-align: middle;
 }
 
-.fas {
 
+.fas {
   color: #fff;
 
   padding: 5px;
@@ -215,12 +262,13 @@ ul{
 
 /* Nazira's Part */
 
-
 h3 {
   font-weight: 400;
 }
 
 .right-aside {
+  width: 20%;
+  margin: 10px;
   text-align: center;
   line-height: 1.5;
 }
@@ -278,9 +326,8 @@ button:hover {
   color: grey;
 }
 
-.btn {
-  width: 45%;
-
+.btn button {
+  width: 50%;
 }
 
 .section3 {
@@ -296,10 +343,21 @@ button:hover {
 
 /* Nazira's Part ends here */
 
-footer {
+.footer {
+  position: relative;
+  left:0;
+  bottom: 0;
   width: 100%;
-  border: 1px solid gray;
-  height: 5em;
-
-
+  color: white;
+  text-align: left;
+}
+footer .footer-a{
+  background-color: #076490;
+  padding: 16px;
+}
+footer .footer-b,
+footer .footer-b a {
+  background-color: #199de5;
+  padding: 13px;
+  color: white;
 }
