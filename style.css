@@ -9,6 +9,11 @@ body {
 }
 
 /* header */
+.first-part {
+  display: flex;
+  padding: 15px;
+  padding-left: 0;
+}
 .navi {
   background-color: #199DE5;
   width: 100%;
@@ -16,22 +21,22 @@ body {
   position: fixed;
   top: 0;
 }
-.seytech, .seytech .fa-home{
+.seytech i {
+  padding-right: 20px;
+}
+.seytech a {
   background-color: #076490!important;
   font-size: 18px;
-  padding: 15px 16px !important;
+  padding: 30px;
   border: none;
   color: #fff;
   text-decoration: none;
+  
 }
 
-a:hover  {
-  color: black;
-  background-color: rgb(230, 230, 224)!important;
-}
-.globe,
-.user,
-.envelope {
+
+
+.globe a {
   color: #fff;
   padding: 30px 24px;
   width: auto;
@@ -39,22 +44,16 @@ a:hover  {
   background-color: #199DE5;
   margin-left: -5px;
 }
-.globe:hover {
-  color: black;
-  background-color: rgb(255, 255, 255);
-}
-.user:hover{
-    color: black;
-    background-color: rgb(255, 255, 255);
-}
-.envelope:hover{
-    color: black;
-    background-color: rgb(255, 255, 255);     }
+
+
+
 /* Navigation ends here */
 main {
   display: flex;
   align-items: flex-start;
   margin-top: 70px;
+  
+  
 }
 .left-side{
   flex: 2;
@@ -124,7 +123,7 @@ hr {
 }
 .my-photos img{
   width:  50%;
-  height: 120px;
+  
   padding: 10px 20px;
 }
 /* Kanat style ends here */
@@ -248,8 +247,13 @@ ul{
   border: none;
   vertical-align: middle;
 }
-
-
+a:hover {
+  
+}
+ a .fas:hover {
+  color: black;
+  background-color: blanchedalmond;
+}
 .fas {
   color: #fff;
 
