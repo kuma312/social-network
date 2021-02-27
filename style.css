@@ -208,7 +208,7 @@ ul{
 }
 .time {
   float: right;
-  opacity: 0.5;
+  color: rgb(179,179,179);
   margin-top: 10px;
 }
 .middle-col button {
@@ -288,6 +288,7 @@ button:hover > *  {
 .accept,
 .remove {
   opacity: 0.6;
+  
 }
 .accept:hover {
   background-color: rgb(206, 206, 206);
