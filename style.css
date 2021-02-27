@@ -2,9 +2,14 @@
   box-sizing: border-box;
 }
 body {
-  margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
+  margin: 0;
+}
+/* giving same box shadow */
+.my-profile , .left-middle, .interests, .hey, .middle-col, .section1,
+.section2, .section3, .section4  {
+  box-shadow: 3px 3px 15px 2px rgb(180, 193, 206);
 }
 /* header */
 .first-part {
@@ -12,12 +17,13 @@ body {
   padding: 15px;
   padding-left: 0;
 }
-.navi {
+header {
   background-color: #199DE5;
   width: 100%;
   overflow: hidden;
   position: fixed;
   top: 0;
+
 }
 .seytech i {
   padding-right: 20px;
@@ -41,8 +47,9 @@ body {
 /* Navigation ends here */
 main {
   display: flex;
-  align-items: flex-start;
-  margin-top: 70px;
+  width: 90%;
+  margin: auto;
+  padding-top: 70px;
 }
 .left-side{
   flex: 2;
@@ -57,9 +64,7 @@ main {
   margin: 10px;
 }
 /* Kanat style starts here */
-.my-profile , .left-middle{
-  box-shadow: 3px 3px 15px 2px rgb(180, 193, 206);
-}
+
 .my-profile p {
   padding-top: 10px;
   text-align: center;
@@ -117,8 +122,6 @@ hr {
 /* Kanat style ends here */
 /* Chopas styles start here */
 .interests, .hey{
-  box-shadow: 7px 6px 26px -6px rgba(0, 0, 0, 0.75);
-  box-sizing: border-box;
   padding: 15px;
   margin-top: 20px;
 }
@@ -180,20 +183,8 @@ ul{
   padding: 10px;
   border: 0px solid gray;
   min-height: 10em;
-  box-sizing: border-box;
   clear: both;
-  box-shadow: 3px 3px 15px 2px rgb(180, 193, 206);
 }
-.middle-col {
-    width: 100%;
-    margin-bottom: 15px;
-    padding: 10px;
-    border: 0px solid gray;
-    min-height: 10em;
-    box-sizing: border-box;
-    clear: both;
-    box-shadow: 3px 3px 15px 2px rgb(180, 193, 206);
-  }
 .user-content {
   display: flex;
 }
@@ -203,7 +194,6 @@ ul{
 }
 .user-content img {
   width: 100%;
-  box-sizing: border-box;
 }
 .middle-col input {
   width: 100%;
@@ -248,12 +238,10 @@ h3 {
 .section2,
 .section3,
 .section4 {
-  box-sizing: border-box;
   border-width: 0;
   border-style: solid;
   padding: 0.15px 16px;
   margin-bottom: 20px;
-  box-shadow: 3px 3px 15px 2px rgb(180, 193, 206);
 }
 button {
   display: inline-block;
@@ -325,7 +313,7 @@ button:hover > *  {
   margin-bottom: 30px;
 }
 /* Nazira’s Part ends here */
-.footer {
+footer {
   position: relative;
   left:0;
   bottom: 0;
@@ -333,12 +321,12 @@ button:hover > *  {
   color: white;
   text-align: left;
 }
-footer .footer-a{
+footer :first-child{
   background-color: #076490;
   padding: 16px;
 }
-footer .footer-b,
-footer .footer-b a {
+footer :last-child,
+footer :last-child a {
   background-color: #199DE5;
   padding: 13px;
   color: white;
