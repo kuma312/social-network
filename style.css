@@ -1,22 +1,33 @@
 * {
   box-sizing: border-box;
 }
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
   margin: 0;
 }
+
 /* giving same box shadow */
-.my-profile , .left-middle, .interests, .hey, .middle-col, .section1,
-.section2, .section3, .section4  {
+.my-profile,
+.left-middle,
+.interests,
+.hey,
+.middle-col,
+.section1,
+.section2,
+.section3,
+.section4 {
   box-shadow: 3px 3px 15px 2px rgb(180, 193, 206);
 }
+
 /* header */
 .first-part {
   display: flex;
   padding: 15px;
   padding-left: 0;
 }
+
 header {
   background-color: #199DE5;
   width: 100%;
@@ -25,9 +36,11 @@ header {
   top: 0;
 
 }
+
 .seytech i {
   padding-right: 20px;
 }
+
 .seytech a {
   background-color: #076490;
   font-size: 18px;
@@ -36,6 +49,7 @@ header {
   color: #fff;
   text-decoration: none;
 }
+
 .globe a {
   color: #fff;
   padding: 30px 24px;
@@ -44,38 +58,46 @@ header {
   background-color: #199DE5;
   margin-left: -5px;
 }
-/* Navigation ends here */
+/* header ends here */
+
+/* main starts here */
 main {
   display: flex;
   width: 90%;
   margin: auto;
   padding-top: 70px;
 }
-.left-side{
+
+.left-side {
   flex: 2;
   margin: 10px;
 }
-.container{
+
+.container {
   flex: 4;
   margin: 10px;
 }
-.right-aside{
+
+.right-aside {
   flex: 1;
   margin: 10px;
 }
-/* Kanat style starts here */
+/* aside left-side starts here */
 
+/* left-top */
 .my-profile p {
   padding-top: 10px;
   text-align: center;
   margin: 0;
 }
+
 hr {
   width: 95%;
   margin: auto;
   border: 0;
   border-top: 1px solid #eee;
 }
+
 .my-pic img {
   border-radius: 50%;
   width: 120px;
@@ -83,16 +105,19 @@ hr {
   margin: auto;
   padding: 15px 0px 20px 0px;
 }
+
 .personal-data i {
   color: grey;
   padding-right: 20px;
 }
+
 .personal-data {
   padding: 20px;
   padding-top: 0;
   list-style-type: none;
   line-height: 10px;
 }
+
 .my-groups button,
 .my-events button,
 .my-photos button {
@@ -102,30 +127,36 @@ hr {
   width: 100%;
   text-align: left;
 }
+
 .my-groups i,
 .my-events i,
 .my-photos i {
   padding-right: 20px;
 }
+
 .my-groups p,
-.my-events p{
+.my-events p {
   padding-left: 20px;
 }
-.nature-img{
+
+.nature-img {
   display: inline-flex;
   flex-wrap: wrap;
 }
-.my-photos img{
-  width:  50%;
+
+.my-photos img {
+  width: 50%;
   padding: 10px 20px;
 }
-/* Kanat style ends here */
-/* Chopas styles start here */
-.interests, .hey{
+
+/* left-bottom */
+.interests,
+.hey {
   padding: 15px;
   margin-top: 20px;
 }
-.interests ul li{
+
+.interests ul li {
   list-style: none;
   text-align: center;
   color: white;
@@ -134,49 +165,61 @@ hr {
   margin: 2px;
   font-size: 12px;
 }
-ul{
+
+ul {
   padding: 0;
 }
-.hey{
+
+.hey {
   background-color: rgb(221, 214, 214);
   padding: 10px;
   margin-top: 20px;
   position: relative;
 }
-.hey i{
+
+.hey i {
   color: #000;
 }
-.interests li:nth-child(-n+2){
+
+.interests li:nth-child(-n+2) {
   background-color: rgb(39, 67, 126);
 }
-.interests li:last-child{
+
+.interests li:last-child {
   background-color: rgb(237, 240, 241);
 }
-.interests li:nth-child(n+8){
+
+.interests li:nth-child(n+8) {
   color: black;
 }
-.interests li:nth-child(n+3):nth-child(-n+7){
+
+.interests li:nth-child(n+3):nth-child(-n+7) {
   background-color: rgb(17, 173, 224);
 }
-.interests li:nth-child(n+8):nth-child(-n+9){
+
+.interests li:nth-child(n+8):nth-child(-n+9) {
   background-color: rgb(146, 150, 150);
 }
-.interests li:nth-child(10){
+
+.interests li:nth-child(10) {
   background-color: rgb(197, 194, 194);
 }
-.close-button{
-  position:absolute;
+
+.close-button {
+  position: absolute;
   top: 0;
   right: 0;
   border: none;
   background-color: rgb(197, 192, 192);
   padding: 10px 15px;
 }
-/* Chopas styles end here */
-/* Kumar’s part starts here */
+/* aside left-side ends here */
+
+/* middle section starts here */
 .container {
   width: 50%;
 }
+
 .middle-col {
   width: 100%;
   margin-bottom: 15px;
@@ -185,32 +228,39 @@ ul{
   min-height: 10em;
   clear: both;
 }
+
 .user-content {
   display: flex;
 }
+
 .col-img {
   padding: 0 10px 0 0;
   width: 100%;
 }
+
 .user-content img {
   width: 100%;
 }
+
 .middle-col input {
   width: 100%;
   padding: 10px;
   margin-top: 10px;
 }
+
 .avatar img {
   width: 60px;
   float: left;
   margin-right: 10px;
   border-radius: 50%;
 }
+
 .time {
   float: right;
-  color: rgb(179,179,179);
+  color: rgb(179, 179, 179);
   margin-top: 10px;
 }
+
 .middle-col button {
   background-color: rgb(54, 157, 229);
   color: white;
@@ -219,21 +269,25 @@ ul{
   border: none;
   vertical-align: middle;
 }
+
 .fas {
   color: #fff;
   padding: 5px;
 }
-/* Kumar’s part ends here */
-/* Nazira’s Part */
+/* middle section ends here */
+
+/* aside right-side starts here */
 h3 {
   font-weight: 400;
 }
+
 .right-aside {
   width: 20%;
   margin: 10px;
   text-align: center;
   line-height: 1.5;
 }
+
 .section1,
 .section2,
 .section3,
@@ -243,106 +297,130 @@ h3 {
   padding: 0.15px 16px;
   margin-bottom: 20px;
 }
+
 button {
   display: inline-block;
   background-color: #DFE5E8;
   color: #000;
   padding: 8px 16px;
   border: none;
-  /* width: 100%; */
 }
+
 button:hover {
   background-color: rgb(206, 206, 206);
   color: #000;
 }
-.seytech  :hover, a {
+
+.seytech :hover,
+a {
   color: #000;
-  background-color:rgb(206, 206, 206) ;
+  background-color: rgb(206, 206, 206);
 }
-.seytech :hover > * {
+
+.seytech :hover>* {
   color: black;
 }
-button:hover > *  {
+
+button:hover>* {
   color: black;
 }
+
 .globe a:hover {
   color: #000;
-  background-color:white ;
+  background-color: white;
 }
-.globe a:hover > * {
+
+.globe a:hover>* {
   color: black;
 }
+
 .accept {
   background-color: #4CAF50;
   color: #fff;
   margin-top: 16px;
 }
+
 .remove {
   background-color: #F44336;
   color: #fff;
   margin-top: 16px;
   margin-bottom: 16px;
 }
+
 .accept,
 .remove {
   opacity: 0.6;
-  
+
 }
+
 .accept:hover {
   background-color: rgb(206, 206, 206);
   color: grey;
 }
+
 .remove:hover {
   background-color: rgb(206, 206, 206);
   color: grey;
 }
+
 .btn button {
   width: 50%;
   float: left;
 }
+
 .clearfix {
   clear: both;
 }
+
 .section3 {
   padding: 16px 0px;
 }
+
 .section4 {
   padding: 16px 0px;
   color: #000;
   background-color: #fff;
   margin-bottom: 30px;
 }
-/* Nazira’s Part ends here */
+/* aside right-side ends here */
+
+/* footer starts here */
 footer {
   position: relative;
-  left:0;
+  left: 0;
   bottom: 0;
   width: 100%;
   color: white;
   text-align: left;
 }
-footer :first-child{
+
+footer :first-child {
   background-color: #076490;
   padding: 16px;
 }
+
 footer :last-child,
 footer :last-child a {
   background-color: #199DE5;
   padding: 13px;
   color: white;
 }
-/* Responsiveness has started */
+
+/* media query starts here */
 
 @media screen and (max-width: 767px) {
+
   .globe,
   .interests,
   .hey {
     display: none;
   }
+
   .nature-img {
     display: flex;
     flex-direction: column;
   }
+
   .my-photos img {
     width: 100%;
   }
@@ -352,23 +430,29 @@ footer :last-child a {
     flex-direction: column;
     width: 100%;
   }
+
   .container {
     width: 90%;
     margin: auto;
   }
+
   .right-aside {
     width: 100%;
   }
+
   img {
     width: 50%;
     margin: auto;
   }
+
   .btn {
     float: none;
     display: flex;
     flex-direction: column;
   }
- .btn button, .info {
+
+  .btn button,
+  .info {
     width: 100%;
   }
 }
